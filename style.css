@@ -139,10 +139,14 @@ a:hover {
 .flores {
     list-style-type: none;
 }
+/*animacion*/
 .flor-style {
     border-radius: 10px;
+    transition: all 0.5s;
 }
-
+.flor-style:hover {
+    transform: scale(0.90);
+}
 /* Sección flores mobile styles */
 
 @media only screen and (max-width: 918px) and (min-width: 719px) {
