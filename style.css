@@ -29,6 +29,9 @@ body {
 h1 {
     overflow-y: hidden;
 }
+h5 {
+    overflow-y: hidden;
+}
 /* Header-index */
 header {
     background: linear-gradient(0deg , rgba(255, 253, 233, 0) 0% , rgba(218, 255, 158, 0.918) 100%);
