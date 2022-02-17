@@ -1,3 +1,8 @@
+/*Comentarios (borrar)*/
+/* Cambios en el footer (index)*/
+/* Header (index)**/
+
+
 * {
     padding: 0;
     margin: 0;
@@ -10,6 +15,7 @@
     --background-color: rgba(255, 248, 189, 0.897);
     --background-color2: rgba(255, 255, 255, 0.726);
     --hover: rgb(112, 184, 141);
+    --gradient: rgba(218, 255, 158, 0.918);
 }
 
 /* Index */
@@ -20,7 +26,9 @@ body {
     background-size: cover;
     font-family: 'Poppins', sans-serif;
 }
-
+h1 {
+    overflow-y: hidden;
+}
 /* Header-index */
 header {
     background: linear-gradient(0deg , rgba(255, 253, 233, 0) 0% , rgba(218, 255, 158, 0.918) 100%);
@@ -32,11 +40,7 @@ a {
     text-decoration: none;
     font-weight: lighter;
 }
-.link {
-    padding-right: 20px;
-    font-size: 18px;
-    font-weight: bold;
-}
+
 
 .link-container {
     width: 40%;
@@ -44,19 +48,22 @@ a {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+.nav-item:hover {
+    text-decoration: white;
+}
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-a:hover {
-    color: var(--hover);
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.185);
+.link:hover {
+    color: rgb(255, 255, 255);
 }
 
 .logo {
     width: 175px;
     padding: 0px 20px;
+    z-index: 1;
 }
 /* Header mobile style*/
 @media only screen and (min-width: 1005px) {
@@ -107,6 +114,7 @@ a:hover {
     width: 100%;
     display: flex;
     justify-content: center;
+    overflow-y: hidden;
 }
 .grid-container {
     display: flex;
@@ -139,17 +147,34 @@ a:hover {
 .flores {
     list-style-type: none;
 }
-/*animacion*/
-.flor-style {
+
+
+
+.card-body {
+    background-color: var(--background-color2);
+}
+.card-title {
+    overflow-y: hidden;
+    font-weight: bolder;
+}
+.flor-button {
+    background-color: var(--gradient);
+    color: rgb(80, 80, 80);
+    font-weight: bold;
+}
+
+.card {
+    margin: 0 3px;
     border-radius: 10px;
     transition: all 0.5s;
+    justify-self: center;
 }
-.flor-style:hover {
-    transform: scale(0.90);
+.card:hover {
+    transform: scale(0.98);
 }
 /* Sección flores mobile styles */
 
-@media only screen and (max-width: 918px) and (min-width: 719px) {
+@media only screen and (max-width: 931px) and (min-width: 719px) {
     .flor-style {
         width: 170px;
     }
@@ -273,10 +298,11 @@ footer {
 .footer-link {
     padding-left: 5px;
 }
-h3 {
+.footer-txt {
     display: flex;
     justify-content: center;
     text-align: center;
+    overflow-y: hidden;
 }
 .footer-link-container {
     display: flex;
@@ -312,6 +338,7 @@ h3 {
 }
 .nosotros-txt {
     grid-column: 2 / 3;
+    align-self: center;
 }
 /* Nosotros mobile styles */
 @media only screen and (max-width: 910px) and (min-width: 840px) {
