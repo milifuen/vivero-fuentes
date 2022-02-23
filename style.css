@@ -311,6 +311,10 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 40px;
+    max-height: 40px;
+    min-width: 40px;
+    min-height: 40px;
 }
 .contact-txt {
     margin-left: 10px;
@@ -319,11 +323,5 @@ footer {
 }
 .contact-p {
     text-align: center;
-}
-.location {
-    max-width: 40px;
-    max-height: 40px;
-    min-width: 40px;
-    min-height: 40px;
 }
 /* fin Contacto */
