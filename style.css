@@ -324,4 +324,13 @@ footer {
 .contact-p {
     text-align: center;
 }
+@media screen and (max-width: 350px) {
+    .contacto-ul {
+        margin: 5px;
+        padding: 0%;
+    }
+    .contacto-map {
+        max-width: 300px;
+    }
+}
 /* fin Contacto */
