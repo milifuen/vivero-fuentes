@@ -1,0 +1,193 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background-image: url(../images/fondo4.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+  list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  overflow-y: hidden;
+}
+
+header {
+  z-index: 1;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(0deg, rgba(255, 253, 233, 0) 0%, rgba(218, 255, 158, 0.918) 100%);
+}
+header nav ul li a {
+  font-weight: lighter;
+}
+header nav ul li a:hover {
+  transition: all 0.5s;
+  transform: scale(0.95);
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.589);
+}
+
+.logo {
+  width: 140px;
+  margin: 0 10px;
+  z-index: 1;
+}
+@media screen and (max-width: 360px) and (min-width: 300px) {
+  .logo {
+    margin-left: 5px;
+  }
+}
+
+.start {
+  padding-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow-y: hidden;
+}
+
+.grid-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+}
+@media screen and (max-width: 718px) and (min-width: 455px) {
+  .grid {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+  }
+}
+@media screen and (max-width: 454px) {
+  .grid {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+  }
+}
+
+.flores {
+  list-style-type: none;
+}
+
+.card-title {
+  overflow-y: hidden;
+  font-weight: bolder;
+}
+
+.flor-button {
+  background-color: rgba(0, 0, 0, 0);
+  color: #505050;
+  font-weight: bold;
+}
+
+.card {
+  margin: 0 3px;
+  border-radius: 10px;
+  transition: all 0.5s;
+  justify-self: center;
+}
+.card:hover {
+  transform: scale(0.98);
+}
+
+.flor-title {
+  padding: 20px 20px;
+}
+@media only screen and (max-width: 494px) {
+  .flor-title {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.info {
+  width: 95%;
+  margin: 10px 0px;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+}
+@media only screen and (max-width: 494px) {
+  .info {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+  }
+}
+
+.info-container {
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 494px) {
+  .info-container {
+    margin: 50px 0;
+  }
+}
+
+.flor-img {
+  border-radius: 10px;
+  grid-column: 1/2;
+  justify-self: center;
+  filter: drop-shadow(3px 1px 3px grey);
+}
+@media only screen and (max-width: 494px) {
+  .flor-img {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}
+
+.flor.txt {
+  grid-column: 2/4;
+}
+@media only screen and (max-width: 494px) {
+  .flor.txt {
+    grid-row: 2/3;
+  }
+}
+
+footer {
+  background: linear-gradient(0deg, rgba(211, 255, 141, 0.918) 0%, rgba(255, 253, 233, 0) 100%);
+}
+footer nav ul li a {
+  text-decoration: black;
+  margin-left: 5px 10px 20px;
+  transition: all 0.5s;
+}
+footer nav ul li a:hover {
+  transform: scale(0.95);
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.589);
+}
+
+.footer-link-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.footer-txt {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  overflow-y: hidden;
+  margin: 5px 0;
+  font-weight: bolder;
+}
+
+/*# sourceMappingURL=style.css.map */

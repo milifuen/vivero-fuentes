@@ -110,13 +110,13 @@ a {
         width: 170px;
     }
 }
-@media only screen and (max-width: 718px) and (min-width: 455px) {
+@media screen and (max-width: 718px) and (min-width: 455px) {
     .grid {
         grid-template-columns: auto auto;
         grid-template-rows: auto auto;
     }
 }
-@media only screen and (max-width: 454px) {
+@media screen and (max-width: 454px) {
     .grid {
         grid-template-columns: auto;
         grid-template-rows: auto auto auto auto;

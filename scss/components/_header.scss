@@ -1,0 +1,32 @@
+@import "../base/variables";
+@import "../base/maps";
+
+
+header {
+    z-index: 1;
+    font-family: $font-family;
+    background: $gradient-1;
+    nav {
+        ul {
+            li {
+                a {
+                    text-decoration: map-get($a, text-decoration, font-color);
+                    font-weight: lighter;
+                    &:hover {
+                        transition: all 0.5s;
+                        transform: scale(0.95);
+                        text-shadow: $text-shadow
+                    }
+                }
+            }
+        }
+    }
+}
+.logo {
+    width: 140px;
+    margin: 0 10px;
+    z-index: 1;
+    @media screen and (max-width: 360px) and (min-width: 300px) {
+        margin-left: 5px;
+    }
+}

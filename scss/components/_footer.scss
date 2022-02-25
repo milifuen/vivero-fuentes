@@ -1,0 +1,34 @@
+@import "../base/variables";
+
+footer {
+    background: $gradient-2;
+    nav {
+        ul {
+            li {
+                a {
+                    text-decoration: black;
+                    margin-left: nth($sizes,1);
+                    transition: all 0.5s;
+                    &:hover {
+                        transform: scale(0.95);
+                        text-shadow: $text-shadow
+                    }
+                }
+            }
+        }
+    }
+}
+.footer-link-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: lighter;
+}
+.footer-txt {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    overflow-y: hidden;
+    margin: 5px 0;
+    font-weight: bolder;
+}

@@ -1,0 +1,12 @@
+@import "../base/variables";
+body {
+    background-image:url(../images/fondo4.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: $font-family;
+    list-style-type: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    overflow-y: hidden;
+}
