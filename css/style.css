@@ -18,7 +18,8 @@ body {
 h1, h2, h3, h4, h5, h6 {
   overflow-y: hidden;
 }
-
+/* Index*/
+/* Header */
 header {
   z-index: 1;
   font-family: "Poppins", sans-serif;
@@ -43,7 +44,8 @@ header nav ul li a:hover {
     margin-left: 5px;
   }
 }
-
+/* Fin Header*/
+/* Sección Flores*/
 .start {
   padding-top: 20px;
   width: 100%;
@@ -113,7 +115,9 @@ header nav ul li a:hover {
     justify-content: center;
   }
 }
+/* Fin Sección Flores*/
 
+/*Sección info*/
 .info {
   width: 95%;
   margin: 10px 0px;
@@ -160,7 +164,9 @@ header nav ul li a:hover {
     grid-row: 2/3;
   }
 }
+/*Fin Sección info*/
 
+/*Footer*/
 footer {
   background: linear-gradient(0deg, rgba(211, 255, 141, 0.918) 0%, rgba(255, 253, 233, 0) 100%);
 }
@@ -189,5 +195,5 @@ footer nav ul li a:hover {
   margin: 5px 0;
   font-weight: bolder;
 }
-
+/*Fin Footer*/
 /*# sourceMappingURL=style.css.map */
