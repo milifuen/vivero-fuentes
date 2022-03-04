@@ -317,9 +317,13 @@ footer {
     min-height: 40px;
 }
 .contact-txt {
+    color: black;
     margin-left: 10px;
     font-family: sans-serif;
     font-weight: lighter;
+}
+.contact-txt:hover {
+    color: grey;
 }
 .contact-p {
     text-align: center;

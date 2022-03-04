@@ -1,5 +1,5 @@
 @import "../base/variables";
-
+/* Fotter*/
 footer {
     background: $gradient-2;
     nav {
@@ -10,6 +10,7 @@ footer {
                     margin-left: nth($sizes,1);
                     transition: all 0.5s;
                     &:hover {
+                        text-decoration: black;
                         transform: scale(0.95);
                         text-shadow: $text-shadow
                     }
@@ -32,3 +33,4 @@ footer {
     margin: 5px 0;
     font-weight: bolder;
 }
+/* fin Footer*/

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -18,8 +19,8 @@ body {
 h1, h2, h3, h4, h5, h6 {
   overflow-y: hidden;
 }
-/* Index*/
-/* Header */
+
+/* Header*/
 header {
   z-index: 1;
   font-family: "Poppins", sans-serif;
@@ -44,8 +45,13 @@ header nav ul li a:hover {
     margin-left: 5px;
   }
 }
+
 /* Fin Header*/
 /* Sección Flores*/
+.index-main {
+  margin-bottom: 40px;
+}
+
 .start {
   padding-top: 20px;
   width: 100%;
@@ -88,6 +94,7 @@ header nav ul li a:hover {
 .card-title {
   overflow-y: hidden;
   font-weight: bolder;
+  font-size: 20px;
 }
 
 .flor-button {
@@ -106,18 +113,19 @@ header nav ul li a:hover {
   transform: scale(0.98);
 }
 
+/* Fin sección Flores*/
+/* Sección Info*/
 .flor-title {
+  font-size: 30px;
   padding: 20px 20px;
 }
-@media only screen and (max-width: 494px) {
+@media only screen and (max-width: 550px) {
   .flor-title {
     display: flex;
     justify-content: center;
   }
 }
-/* Fin Sección Flores*/
 
-/*Sección info*/
 .info {
   width: 95%;
   margin: 10px 0px;
@@ -126,7 +134,7 @@ header nav ul li a:hover {
   grid-template-columns: auto auto auto;
   grid-gap: 10px;
 }
-@media only screen and (max-width: 494px) {
+@media only screen and (max-width: 550px) {
   .info {
     grid-template-columns: auto;
     grid-template-rows: auto auto;
@@ -137,7 +145,7 @@ header nav ul li a:hover {
   display: flex;
   justify-content: center;
 }
-@media only screen and (max-width: 494px) {
+@media only screen and (max-width: 550px) {
   .info-container {
     margin: 50px 0;
   }
@@ -148,8 +156,9 @@ header nav ul li a:hover {
   grid-column: 1/2;
   justify-self: center;
   filter: drop-shadow(3px 1px 3px grey);
+  padding-bottom: 3px;
 }
-@media only screen and (max-width: 494px) {
+@media only screen and (max-width: 550px) {
   .flor-img {
     grid-column: 1/2;
     grid-row: 1/2;
@@ -159,14 +168,14 @@ header nav ul li a:hover {
 .flor.txt {
   grid-column: 2/4;
 }
-@media only screen and (max-width: 494px) {
+@media only screen and (max-width: 550px) {
   .flor.txt {
     grid-row: 2/3;
   }
 }
-/*Fin Sección info*/
 
-/*Footer*/
+/* Fin Sección info*/
+/* Fotter*/
 footer {
   background: linear-gradient(0deg, rgba(211, 255, 141, 0.918) 0%, rgba(255, 253, 233, 0) 100%);
 }
@@ -176,6 +185,7 @@ footer nav ul li a {
   transition: all 0.5s;
 }
 footer nav ul li a:hover {
+  text-decoration: black;
   transform: scale(0.95);
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.589);
 }
@@ -195,5 +205,204 @@ footer nav ul li a:hover {
   margin: 5px 0;
   font-weight: bolder;
 }
-/*Fin Footer*/
+
+/* fin Footer*/
+.main-nosotros {
+  display: flex;
+  justify-content: center;
+}
+
+.main-contacto, .main-faq, .main-nosotros {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.contact-image {
+  max-width: 40px;
+  max-height: 40px;
+  min-width: 40px;
+  min-height: 40px;
+}
+
+/*Nosotros*/
+@media only screen and (max-width: 910px) and (min-width: 840px) {
+  .main-nosotros {
+    margin: 30px 0;
+  }
+}
+@media only screen and (max-width: 839px) {
+  .main-nosotros {
+    margin: 30px 0;
+  }
+}
+
+.presentacion {
+  margin: 5px;
+}
+
+.nosotros-container {
+  width: 90%;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto auto;
+  grid-gap: 15px;
+}
+@media only screen and (max-width: 839px) {
+  .nosotros-container {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+  }
+}
+
+.vivero-foto {
+  width: 500px;
+  grid-column: 1/2;
+  border-radius: 10px;
+}
+@media only screen and (max-width: 839px) {
+  .vivero-foto {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}
+
+.nosotros-txt {
+  grid-column: 2/3;
+  align-self: center;
+}
+@media only screen and (max-width: 910px) and (min-width: 840px) {
+  .nosotros-txt {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 839px) {
+  .nosotros-txt {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 839px) {
+  .vivero-foto-container {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* fin Nosotros*/
+.main-nosotros {
+  display: flex;
+  justify-content: center;
+}
+
+.main-contacto, .main-faq, .main-nosotros {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.contact-image {
+  max-width: 40px;
+  max-height: 40px;
+  min-width: 40px;
+  min-height: 40px;
+}
+
+.map-card-1 {
+  justify-self: center;
+}
+
+.map {
+  width: 300px;
+  height: 300px;
+  display: block;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+@media screen and (max-width: 575px) {
+  .locales-map {
+    justify-self: center;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .col-sm-5 {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/*FAQ*/
+.faq-image-3 {
+  width: 300px;
+  border-radius: 5px;
+  align-self: center;
+}
+
+.faq-answer {
+  display: inline;
+}
+
+.faq-link {
+  font-weight: bolder;
+  color: black;
+}
+.faq-link:hover {
+  color: #56a347;
+}
+
+/*fin FAQ*/
+.main-nosotros {
+  display: flex;
+  justify-content: center;
+}
+
+.main-contacto, .main-nosotros, .main-faq {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.contact-image {
+  max-width: 40px;
+  max-height: 40px;
+  min-width: 40px;
+  min-height: 40px;
+}
+
+/*Contacto*/
+.contact-image {
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact.txt {
+  color: black;
+  text-decoration: none;
+  margin-left: 10px;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+.contact-p {
+  text-align: center;
+}
+
+@media screen and (max-width: 350px) {
+  .contacto-ul {
+    margin: 5px;
+    padding: 0%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .contacto-map {
+    max-width: 300px;
+  }
+}
+
+/*fin Contacto*/
+
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,22 @@
+@import "../base/maps";
+.map-card-1 {
+    justify-self: center;
+}
+.map {
+    width: map-get($img, size);
+    height: map-get($img, size);
+    display: block;
+    border-radius: map-get($img, borde);
+    margin: 5px 0;
+}
+.locales-map {
+    @media screen and (max-width:575px) {
+        justify-self: center;
+    }
+}
+.col-sm-5 {
+    @media screen and (max-width:575px) {
+        display: flex;
+        justify-content: center;
+    }
+}

@@ -1,7 +1,7 @@
 @import "../base/variables";
 @import "../base/maps";
 
-
+/* Header*/
 header {
     z-index: 1;
     font-family: $font-family;
@@ -30,3 +30,4 @@ header {
         margin-left: 5px;
     }
 }
+/* Fin Header*/

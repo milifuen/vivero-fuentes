@@ -1,0 +1,36 @@
+@import "../base/maps";
+@import "../base/extends";
+@import "../base/mixins";
+/*Contacto*/
+.main-contacto {
+    @extend %main-2;
+}
+.contact-image {
+    width: map-get($img, size2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @extend %icono;
+}
+.contact.txt {
+    color: black;
+    text-decoration: none;
+    margin-left: 10px;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+.contact-p {
+    text-align: center;
+}
+.contacto-ul {
+    @media screen and (max-width: 350px) {
+        margin: 5px;
+        padding: 0%;
+    }
+}
+.contacto-map {
+    @media screen and (max-width: 350px) {
+        max-width: 300px;
+    }
+}
+/*fin Contacto*/

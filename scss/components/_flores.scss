@@ -1,5 +1,9 @@
 @import "../base/variables";
-
+@import "../base/maps";
+/* Sección Flores*/
+.index-main {
+    margin-bottom: map-get($design, mb);
+}
 .start {
     padding-top: 20px;
     width: 100%;
@@ -34,6 +38,7 @@
 .card-title {
     overflow-y: hidden;
     font-weight: bolder;
+    font-size: 20px;
 }
 .flor-button {
     background-color: rgba(0, 0, 0, 0);
@@ -49,3 +54,4 @@
 		transform: scale(0.98);
 	}
 }
+/* Fin sección Flores*/

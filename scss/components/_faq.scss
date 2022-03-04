@@ -1,0 +1,20 @@
+@import "../base/mixins";
+@import "../base/maps";
+/*FAQ*/
+.faq-image-3 {
+    @include img(300px, 5px, center)
+}
+.main-faq {
+    @extend %main-2;
+}
+.faq-answer {
+    display: inline;
+}
+.faq-link {
+    font-weight: bolder;
+    color: black;
+    &:hover {
+        color: rgb(86, 163, 71);
+    }
+}
+/*fin FAQ*/

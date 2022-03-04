@@ -1,0 +1,9 @@
+@mixin img($width, $border, $align) {
+    width: $width;
+    border-radius: $border;
+    align-self: $align;
+}
+@mixin txt($ff, $fw) {
+    font-family: $ff;
+    font-weight: $fw;
+}
