@@ -212,7 +212,63 @@ footer nav ul li a:hover {
   justify-content: center;
 }
 
-.main-contacto, .main-faq, .main-nosotros {
+.main-faq, .main-nosotros, .main-contacto {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.contact-image {
+  max-width: 40px;
+  max-height: 40px;
+  min-width: 40px;
+  min-height: 40px;
+}
+
+/*Contacto*/
+.contact-image {
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-txt {
+  color: black;
+  text-decoration: none;
+  margin-left: 10px;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+.contact-p {
+  text-align: center;
+}
+
+@media screen and (max-width: 350px) {
+  .contacto-ul {
+    margin: 5px;
+    padding: 0%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .contacto-map {
+    max-width: 280px;
+  }
+}
+
+.contacto-container {
+  display: flex;
+  justify-content: center;
+}
+
+/*fin Contacto*/
+.main-nosotros {
+  display: flex;
+  justify-content: center;
+}
+
+.main-faq, .main-nosotros, .main-contacto {
   margin-top: 30px;
   margin-bottom: 40px;
 }
@@ -296,7 +352,7 @@ footer nav ul li a:hover {
   justify-content: center;
 }
 
-.main-contacto, .main-faq, .main-nosotros {
+.main-faq, .main-contacto, .main-nosotros {
   margin-top: 30px;
   margin-bottom: 40px;
 }
@@ -325,11 +381,30 @@ footer nav ul li a:hover {
     justify-self: center;
   }
 }
+@media screen and (max-width: 410px) {
+  .locales-map {
+    max-width: 270px;
+  }
+}
 
 @media screen and (max-width: 575px) {
   .col-sm-5 {
     display: flex;
     justify-content: center;
+  }
+}
+
+.locales-card {
+  max-width: 500px;
+}
+@media screen and (max-width: 510px) {
+  .locales-card {
+    max-width: 400px;
+  }
+}
+@media screen and (max-width: 410px) {
+  .locales-card {
+    max-width: 300px;
   }
 }
 
@@ -352,57 +427,10 @@ footer nav ul li a:hover {
   color: #56a347;
 }
 
+.faq-question {
+  font-size: 25px;
+}
+
 /*fin FAQ*/
-.main-nosotros {
-  display: flex;
-  justify-content: center;
-}
-
-.main-contacto, .main-nosotros, .main-faq {
-  margin-top: 30px;
-  margin-bottom: 40px;
-}
-
-.contact-image {
-  max-width: 40px;
-  max-height: 40px;
-  min-width: 40px;
-  min-height: 40px;
-}
-
-/*Contacto*/
-.contact-image {
-  width: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.contact.txt {
-  color: black;
-  text-decoration: none;
-  margin-left: 10px;
-  font-family: sans-serif;
-  font-weight: lighter;
-}
-
-.contact-p {
-  text-align: center;
-}
-
-@media screen and (max-width: 350px) {
-  .contacto-ul {
-    margin: 5px;
-    padding: 0%;
-  }
-}
-
-@media screen and (max-width: 350px) {
-  .contacto-map {
-    max-width: 300px;
-  }
-}
-
-/*fin Contacto*/
 
 /*# sourceMappingURL=style.css.map */

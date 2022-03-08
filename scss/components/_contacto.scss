@@ -12,7 +12,7 @@
     justify-content: center;
     @extend %icono;
 }
-.contact.txt {
+.contact-txt {
     color: black;
     text-decoration: none;
     margin-left: 10px;
@@ -30,7 +30,11 @@
 }
 .contacto-map {
     @media screen and (max-width: 350px) {
-        max-width: 300px;
+        max-width: 280px;
     }
+}
+.contacto-container {
+    display: flex;
+    justify-content: center;
 }
 /*fin Contacto*/
