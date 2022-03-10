@@ -2,7 +2,8 @@
 @import "../base/maps";
 /*FAQ*/
 .faq-image-3 {
-    @include img(300px, 5px, center)
+    @include img(300px, 5px, center);
+    margin-top: 20px;
 }
 .main-faq {
     @extend %main-2;

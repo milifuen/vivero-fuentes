@@ -35,6 +35,12 @@
 .flores {
     list-style-type: none;
 }
+.card-img-top {
+    max-width: 220px;
+    min-width: 220px;
+    max-height: 220px;
+    min-height: 220px;
+}
 .card-title {
     overflow-y: hidden;
     font-weight: bolder;

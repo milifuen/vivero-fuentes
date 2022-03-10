@@ -1,4 +1,5 @@
 @import "../base/variables";
+@import "../base/extends";
 body {
     background-image:url(../images/fondo4.png);
     background-repeat: no-repeat;
@@ -9,4 +10,17 @@ body {
 }
 h1, h2, h3, h4, h5, h6 {
     overflow-y: hidden;
+    &::selection {
+        @extend %selection;
+    }
 }
+p {
+    &::selection {
+        @extend %selection;
+    }
+}
+a {
+    &::selection {
+        @extend %selection;
+    }
+} 

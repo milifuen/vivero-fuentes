@@ -9,9 +9,11 @@ header {
     nav {
         ul {
             li {
+                border-right: 1px solid gray;
                 a {
                     text-decoration: map-get($a, text-decoration, font-color);
                     font-weight: lighter;
+                    
                     &:hover {
                         transition: all 0.5s;
                         transform: scale(0.95);
@@ -29,5 +31,8 @@ header {
     @media screen and (max-width: 360px) and (min-width: 300px) {
         margin-left: 5px;
     }
+}
+.link-1 {
+    border-left: 1px solid gray;
 }
 /* Fin Header*/
