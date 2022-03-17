@@ -34,5 +34,8 @@ header {
 }
 .link-1 {
     border-left: 1px solid gray;
+    @media screen and (max-width: 991px) {
+        border-left: 0px;
+    }
 }
 /* Fin Header*/

@@ -16,8 +16,13 @@
     color: black;
     text-decoration: none;
     margin-left: 10px;
+    margin-bottom: 0;
     font-family: sans-serif;
-    font-weight: lighter;
+    display: flex;
+    align-items: center;
+    
+}
+.contact-link {
     &:hover {
         color: map-get($colores, color1);
     }
@@ -32,6 +37,7 @@
     }
 }
 .contacto-map {
+    max-height: 300px;
     @media screen and (max-width: 350px) {
         max-width: 280px;
     }

@@ -1,9 +1,11 @@
 @import "../base/extends";
 @import "../base/maps";
 /*Nosotros*/
+.main-n {
+    @extend %main-2;
+}
 .main-nosotros {
     @extend %main;
-    @extend %main-2;
     @media only screen and (max-width: 910px) and (min-width: 840px) {
         margin: map-get($design, margin);
     }
@@ -13,6 +15,7 @@
 }
 .presentacion {
     margin: 5px;
+    font-weight: bolder;
 }
 .nosotros-container {
     width: map-get($design, width);
@@ -38,7 +41,7 @@
     grid-column: 2 / 3;
     align-self: center;
     @media only screen and (max-width: 910px) and (min-width: 840px) {
-        font-size: 40px;
+        font-size: 15px;
     }
     @media only screen and (max-width: 839px) {
         grid-column: 1 / 2;
@@ -50,6 +53,84 @@
     @media only screen and (max-width: 839px) {
         display: flex;
         justify-content: center;
+    }
+}
+
+
+
+.nuestra-atencion {
+    font-weight: bolder;
+}
+.nosotros-info {
+    margin: 0 30px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    @media screen and (max-width: 825px) and (min-width: 501px) {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
+    @media screen and (max-width:500px) {
+        grid-template-columns: auto;
+        grid-row: auto auto auto auto;
+    }
+}
+.nosotros-title {
+    margin: 15px 0;
+    font-family: sans-serif;
+}
+.nosotros-1 {
+    grid-template-rows: 1 / 2;
+    grid-template-columns: 1 / 2;
+    @media screen and (max-width: 825px) and (min-width: 501px) {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    @media screen and (max-width:500px) {
+        grid-row: 1 / 2;
+    }
+}
+.nosotros-2 {
+    grid-template-rows: 1 / 2;
+    grid-template-columns: 2 / 3;
+    @media screen and (max-width: 825px) and (min-width: 501px) {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+    @media screen and (max-width:500px) {
+        grid-row: 2 / 3;
+    }
+}
+.nosotros-3 {
+    grid-template-rows: 1 / 2;
+    grid-template-columns: 3 / 4;
+    @media screen and (max-width: 825px) and (min-width: 501px) {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    @media screen and (max-width:500px) {
+        grid-row: 3 / 4;
+    }
+}
+.nosotros-4 {
+    grid-template-rows: 1 / 2;
+    grid-template-rows: 4 / 5;
+    @media screen and (max-width: 825px) and (min-width: 501px) {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+    @media screen and (max-width:500px) {
+        grid-row: 4 / 5;
+    }
+}
+.nosotros-img {
+    justify-self: center;
+    width: 250px;
+    height: 250px;
+    @media screen and (max-width: 1113px) and (min-width:500px) {
+        width: 200px;
+        height: 200px;
     }
 }
 /* fin Nosotros*/
