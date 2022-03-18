@@ -31,6 +31,7 @@ footer {
             margin: 0;
         }
         ul {
+            margin: 0;
             li {
                 a {
                     text-decoration: black;
@@ -116,6 +117,8 @@ footer {
     grid-column: 3 / 4;
     grid-row: 1 / 2;
     justify-self: center;
+    display: flex;
+    align-items: center;
     @media screen and (max-width:680px) and (min-width: 406px) {
         grid-row: 2 / 3;
         grid-column: 1 / 3;

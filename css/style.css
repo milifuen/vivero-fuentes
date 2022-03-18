@@ -256,6 +256,9 @@ footer nav {
     margin: 0;
   }
 }
+footer nav ul {
+  margin: 0;
+}
 footer nav ul li a {
   text-decoration: black;
   margin-left: 5px 10px 20px;
@@ -351,6 +354,8 @@ footer nav ul li a:hover {
   grid-column: 3/4;
   grid-row: 1/2;
   justify-self: center;
+  display: flex;
+  align-items: center;
 }
 @media screen and (max-width: 680px) and (min-width: 406px) {
   .footer-form {
